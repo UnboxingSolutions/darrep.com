@@ -64,17 +64,19 @@ footer {
 	height: 160px;
 
 	display: block;
+	text-align: center;
 
 	background-color: #fefff2;
 }
 footer img {
 
-	display: block;
+	display: inline-block;
 
 	margin: 0 auto;
 }
 
-
-
-
-
+#footerText p {
+	display: inline-block;
+	font-weight: bold;
+	margin: 0;
+}
