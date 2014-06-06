@@ -41,7 +41,6 @@ header  h1 {
 
 /* content */
 #content {
-	height: 800px;
 	width: 100%;
 
 	display: block;
@@ -51,12 +50,50 @@ header  h1 {
 }
 
 .textPlace {
-	padding: 20px;
-	
-	margin: 10px;
+
+	padding: 1%;
+	margin: 1%;
+
+
 	border-radius: 15px;
 	background-color: white;
+
 }
+
+
+.imagePlace {
+	width: 29%;
+
+	display: inline-block;
+	padding: 1%;
+	margin: 1%;
+
+
+	border-radius: 15px;
+	background-color: white;
+
+}
+
+.imagePlace img {
+	width: 100%;
+
+}
+
+@media screen and (max-width: 750px) {
+	.textPlace {
+		margin: 4%;
+		padding:3%;
+	}
+
+
+	.imagePlace {
+		display: block;
+		width: 86%;
+		margin: 4%;
+		padding: 3%;
+	}
+}
+
 
 /* footer */
 footer {
@@ -97,5 +134,13 @@ footer p {
 
 	header {
 		height: 65px;
+	}
+
+	.imagePlace {
+		display: block;
+		max-width: 480px;
+		width: 86%;
+		margin: 4%;
+		padding: 3%;
 	}
 }
