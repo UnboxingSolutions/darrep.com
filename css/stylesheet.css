@@ -12,27 +12,30 @@ header {
 	position: fixed;
 	z-index: 10;
 
+	background: -moz-linear-gradient(left,  rgba(80,146,249,0.8) 0%, rgba(70,61,197,0.8) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(80,146,249,0.8)), color-stop(100%,rgba(70,61,197,0.8))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(80,146,249,0.8) 0%,rgba(70,61,197,0.8) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(80,146,249,0.8) 0%,rgba(70,61,197,0.8) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(80,146,249,0.8) 0%,rgba(70,61,197,0.8) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(80,146,249,0.8) 0%,rgba(70,61,197,0.8) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5092f9', endColorstr='#cc463dc5',GradientType=1 ); /* IE6-9 */
 
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
-	filter: alpha(opacity=80);
-    	-moz-opacity: 0.90;
-    	-khtml-opacity: 0.9;
-    	opacity: 0.9;
+}
 
-	background: #5092f9; /* Old browsers */
-	background: -moz-linear-gradient(left,  #5092f9 0%, #463dc5 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#5092f9), color-stop(100%,#463dc5)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(left,  #5092f9 0%,#463dc5 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(left,  #5092f9 0%,#463dc5 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(left,  #5092f9 0%,#463dc5 100%); /* IE10+ */
-	background: linear-gradient(to right,  #5092f9 0%,#463dc5 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5092f9', endColorstr='#463dc5',GradientType=1 ); /* IE6-9 */
+header img {
+	max-height: 100%;
+	max-width: 100%;
+
+	display:inline-block;
 }
 
 header  h1 {
 
-	padding-left: 20px;
-	
+	position: absolute;
+	top: 0;
+	left: 400;
+
+	display: inline-block;	
 	color: white;
 }
 
@@ -61,7 +64,7 @@ header  h1 {
 /* footer */
 footer {
 	width: 100%;
-	height: 160px;
+	height: 100px;
 
 	display: block;
 	text-align: center;
@@ -70,16 +73,28 @@ footer {
 }
 footer img {
 
+	height: 100px;
+
 	display: inline-block;
 
 	margin: 0 auto;
 }
 
-#footerText p {
+footer p {
 	display: inline-block;
 
 	margin: 0;
 	padding-top: 10px;
 
 	font-weight: bold;
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+	  * {
+	  	max-width: 480px;
+	  }
+
+	  body {
+	  	max-width: 480px;
+	  }
 }
