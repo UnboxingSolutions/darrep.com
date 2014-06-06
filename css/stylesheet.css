@@ -58,9 +58,6 @@ header  h1 {
 	background-color: white;
 }
 
-#tp1 {
-}
-
 /* footer */
 footer {
 	width: 100%;
@@ -90,11 +87,15 @@ footer p {
 }
 
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
-	  * {
-	  	max-width: 480px;
-	  }
+	* {
+		max-width: 480px;
+	}
 
-	  body {
-	  	max-width: 480px;
-	  }
+	body {
+		max-width: 480px;
+	}
+
+	header {
+		height: 65px;
+	}
 }
