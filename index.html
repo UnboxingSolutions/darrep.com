@@ -7,11 +7,39 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
+
+	<script language="javascript" type="text/javascript">
+			var timerid = 0;
+			var images = new Array(	"/img/1Start.png",
+						"/img/2Details.png");
+			var countimages = 0;
+			function startTime()
+			{
+				if(timerid)
+				{
+					timerid = 0;
+				}
+				var tDate = new Date();
+				
+				if(countimages == images.length)
+				{
+					countimages = 0;
+				}
+				if(tDate.getSeconds() % 5 == 0)
+				{
+					document.getElementById("slideshow").src = images[countimages];
+				}
+				countimages++;
+				
+				timerid = setTimeout("startTime()", 1000);
+			}
+		</script>
 </head>
-<body>
+<body onload="startTime();">
 	<header>
 		<img src="img/SiteBanner.png"> 
 		<h1>TimeToGo</h1>	
+		
 	</header>
 
 	<div id="content">
@@ -32,7 +60,7 @@
 
 		<div class="imagePlace"> 
 			<p>the main screen</p>	
-			<img src="img/1Start.png" onmousedown='this.src="img/2Details.png"' onmouseup='this.src="img/1Start.png"'> 
+			<img src="img/1Start.png" id="slideshow"> 
 		</div> 
 			
 		<div class="imagePlace" id="middleImage">
