@@ -113,11 +113,27 @@ header  h1 {
 	font-weight: bold;
 }
 .imagePlace div {
-	height: 620px;
+	/*height: 620px;*/
 
 	display: inline-block;
 	position: relative;
+	/*z-index: 10;*/
+}
+#container {
+	margin: 0;
+	padding: 0;
+}
 
+#container img {
+	margin: 0;
+	padding: 0;
+}
+
+#imgforresizing {
+	z-index: -10;
+	margin: 0;
+	padding: 0;
+	/*display: none;*/
 }
 
 @media screen and (max-width: 750px) {
