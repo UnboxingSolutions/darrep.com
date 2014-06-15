@@ -1,7 +1,7 @@
 
 body {
 	-webkit-font-smoothing: antialiased;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-family: "HelveticaNeue", "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
  	font-weight: 300;
 
  	background-color: #ebebeb;
@@ -41,9 +41,21 @@ header  h1 {
 	color: white;
 }
 
+#appstore_header {
+	float:right;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+
+
+
+
+
+
 /* content */
 #content {
-	max-width: 1200px;
+	max-width: 900px;
 
 	display: table;
 
@@ -58,6 +70,7 @@ header  h1 {
 	padding: 1%;
 	margin: 1%;
 
+	font-size: 16px;
 
 	border-radius: 15px;
 	background-color: white;
@@ -78,18 +91,13 @@ header  h1 {
 
 }
 
-#container {
-	position: relative; 
-	/*height: 266px; */
-	width: 100%;
-}
 .slide {
     border: none; 
     opacity: 0; 
-    position: absolute; 
+/*    position: absolute; 
     top: 0; 
     left: 0;
-    -webkit-transition: opacity 1s linear;
+*/    -webkit-transition: opacity 1s linear;
     -moz-transition: opacity 1s linear;
     -o-transition: opacity 1s linear;
     transition: opacity 1s linear;
@@ -119,15 +127,6 @@ header  h1 {
 	position: relative;
 	/*z-index: 10;*/
 }
-#container {
-	margin: 0;
-	padding: 0;
-}
-
-#container img {
-	margin: 0;
-	padding: 0;
-}
 
 #imgforresizing {
 	z-index: -10;
@@ -155,6 +154,11 @@ header  h1 {
 		margin: 4%;
 		padding: 3%;
 	}
+
+}
+
+#appstore_bottom {
+	margin: 0 auto;
 }
 
 
@@ -205,5 +209,9 @@ footer p {
 		width: 86%;
 		margin: 4%;
 		padding: 3%;
+	}
+
+	#appstore_header {
+		display: none;
 	}
 }

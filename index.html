@@ -49,8 +49,8 @@ function removeClass(elem, name) {
 <body onload="nextImage();">
 	<header>
 		<img src="img/SiteBanner.png"> 
-		<h1>TimeToGo</h1>	
-		
+		<h1>Time to Go</h1>	
+		<img src="img/appstore_button.png" id="appstore_header">
 	</header>
 
 	<div id="content">
@@ -70,27 +70,35 @@ function removeClass(elem, name) {
 
 
 		<div class="imagePlace"> 
-		<p>the main screen</p>	
-			<div id="container">
-				<img id="slideimg0" class="slide showMe" src="/img/1Start.png">
-				<img id="slideimg1" class="slide" src="/img/2Details.png">
-			</div>
-		<img id="imgforresizing"src="img/1Start.png">
-
-
+		<p>simple</p>	
+			<div id="container">	
+				<div style="position:absolute;">
+					<img id="slideimg1" class="slide" src="/img/2Details.png">
+				</div>
+				<div>
+					<img id="slideimg0" class="slide showMe" src="/img/1Start.png">
+				</div>
+		</div>
 		</div> 
 			
 		<div class="imagePlace" id="middleImage">
 			
-			<p>Highly customizable</p>
+			<p>customizable</p>
 			<img src="img/3Settings.png">
 		</div>
 
 		<div class="imagePlace"> 
-			<p>Setup your location</p>
+			<p>advanced</p>
 			<img src="img/4Location.png"> 
 		</div>
-	</div>
+
+<!-- 
+		<div class="textPlace"  id="appstore_bottom" >
+			<img src="img/appstore_button.png">
+
+		</div>
+
+ -->	</div>
 
 	<footer>
 		<p>TimeToGo is build by</p>
