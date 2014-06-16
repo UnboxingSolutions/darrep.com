@@ -158,6 +158,9 @@ header  h1 {
 		padding: 3%;
 	}
 
+	#appstore_header {
+		display: none;
+	}
 }
 
 #appstore_bottom {
@@ -192,7 +195,7 @@ footer p {
 	font-weight: bold;
 	font-size: 14px;
 }
-
+/*
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
 	* {
 		max-width: 480px;
@@ -214,10 +217,9 @@ footer p {
 		padding: 3%;
 	}
 
-	#appstore_header {
-		display: none;
-	}
-}
+
+}*/
+
 
 
 #sharebuttons {
