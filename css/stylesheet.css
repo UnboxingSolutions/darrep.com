@@ -81,7 +81,10 @@ header  h1 {
 .imagePlace {
 	width: 29%;
 
+	/*firefox inline-block fix*/
+	-moz-box-sizing: border-box;
 	display: inline-block;
+	vertical-align: top;
 	padding: 1%;
 	margin: 1%;
 
