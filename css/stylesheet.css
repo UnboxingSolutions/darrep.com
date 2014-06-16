@@ -180,12 +180,8 @@ footer {
 }
 
 
-footer a { color: #B62020;}
-footer a:hover { color: #B62020;}
-footer a:visited { color: #B62020;}
-footer a:focus { color: #B62020;}
-footer a:hover, a:active { color: #B62020;}
-
+footer a, a:visited, a:focus, a:active { color: #A6221A;} 
+footer a:hover { text-decoration: none}
 footer img {
 
 	height: 80px;
