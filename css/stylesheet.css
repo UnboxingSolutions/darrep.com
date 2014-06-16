@@ -79,7 +79,7 @@ header  h1 {
 
 
 .imagePlace {
-	width: 29%;
+	width: 29.33333333333333333333333333%;
 
 	/*firefox inline-block fix*/
 	-moz-box-sizing: border-box;
@@ -106,11 +106,6 @@ header  h1 {
     transition: opacity 1s linear;
 }
 .showMe {opacity: 1;}
-
-#middleImage {
-	margin: 1.5%;
-}
-
 .imagePlace img {
 	width: 100%;
 
@@ -227,5 +222,6 @@ footer p {
 
 
 #sharebuttons {
+	margin: 0 auto;	
 	
 }
