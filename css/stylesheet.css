@@ -41,10 +41,15 @@ header  h1 {
 	color: white;
 }
 
-#appstore_header {
+div.appstore_header {
 	float:right;
 	padding-top: 20px;
 	padding-right: 20px;
+}
+
+div.appstore_footer {
+	text-align: center;
+	vertical-align: middle;
 }
 
 
@@ -153,15 +158,17 @@ header  h1 {
 		padding: 3%;
 	}
 
-	#appstore_header {
+	.appstore_header {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 750px) {
+	.appstore_footer {
 		display: none;
 	}
 }
-
-#appstore_bottom {
-	margin: 0 auto;
-}
-
 
 /* footer */
 footer {
@@ -223,5 +230,5 @@ footer p {
 
 #sharebuttons {
 	margin: 0 auto;	
-	
+	text-align: center;
 }
