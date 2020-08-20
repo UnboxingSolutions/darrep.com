@@ -35,6 +35,16 @@ header.wosta {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5092f9', endColorstr='#cc463dc5',GradientType=1 ); /* IE6-9 */
 }
 
+header.relaxedlegs {
+	background: -moz-linear-gradient(left, rgba(72, 196, 199, 0.8) 0%, rgba(143, 204, 141, 0.8) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(72, 196, 199, 0.8)), color-stop(100%,rgba(143, 204, 141, 0.8))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(72, 196, 199, 0.8) 0%,rgba(143, 204, 141, 0.8) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(72, 196, 199, 0.8) 0%,rgba(143, 204, 141, 0.8) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(72, 196, 199, 0.8) 0%,rgba(143, 204, 141, 0.8) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(72, 196, 199, 0.8) 0%,rgba(143, 204, 141, 0.8) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5092f9', endColorstr='#cc463dc5',GradientType=1 ); /* IE6-9 */
+}
+
 header.scrumtimer {
 	background: -moz-linear-gradient(left,  rgba(233,147,79,0.8) 0%, rgba(73,43,103,0.8) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(233,147,79,0.8)), color-stop(100%,rgba(73,43,103,0.8))); /* Chrome,Safari4+ */
@@ -56,7 +66,7 @@ header  h1 {
 
 	position: absolute;
 	top: 0;
-	left: 400;
+	left: 400px;
 
 	display: inline-block;
 	color: white;
@@ -273,4 +283,13 @@ footer p > a  {
 #sharebuttons {
 	margin: 0 auto;
 	text-align: center;
+}
+
+ul.featured {
+	list-style-type: none;
+}
+
+ul.featured a {
+	text-decoration: none;
+	color: #A6221A;
 }
